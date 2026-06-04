@@ -1,0 +1,8 @@
+filename,duration_sec,approach,processing_time_sec,cpu_percent_avg,stoi_before,stoi_after,output_path
+10minute.wav,444.99,SignalProcessing (noisereduce + bandpass + pedalboard),6.566,52.35,1.0,0.8784,C:\Users\DELL\Documents\audio_enhancement_experiment\output_script\10minute_enhanced.wav
+15min.wav,926.01,SignalProcessing (noisereduce + bandpass + pedalboard),17.073,50.73,1.0,0.852,C:\Users\DELL\Documents\audio_enhancement_experiment\output_script\15min_enhanced.wav
+30minu.wav,1806.09,SignalProcessing (noisereduce + bandpass + pedalboard),73.323,99.74,1.0,0.8562,C:\Users\DELL\Documents\audio_enhancement_experiment\output_script\30minu_enhanced.wav
+5 minute interview.wav,300.99,SignalProcessing (noisereduce + bandpass + pedalboard),6.627,50.18,1.0,0.8592,C:\Users\DELL\Documents\audio_enhancement_experiment\output_script\5 minute interview_enhanced.wav
+60min.wav,3663.97,SignalProcessing (noisereduce + bandpass + pedalboard),80.694,46.18,1.0,0.8239,C:\Users\DELL\Documents\audio_enhancement_experiment\output_script\60min_enhanced.wav
+bigtips_factoryr1_16.wav,2.88,SignalProcessing (noisereduce + bandpass + pedalboard),0.279,53.15,1.0,0.8536,C:\Users\DELL\Documents\audio_enhancement_experiment\output_script\bigtips_factoryr1_16_enhanced.wav
+sample_01_1min.wav,5.0,SignalProcessing (noisereduce + bandpass + pedalboard),0.142,45.1,0.3787,0.3725,C:\Users\DELL\Documents\audio_enhancement_experiment\output_script\sample_01_1min_enhanced.wav

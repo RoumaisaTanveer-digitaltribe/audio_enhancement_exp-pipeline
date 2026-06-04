@@ -1,0 +1,6 @@
+input/*.wav
+output_model/
+output_classical/
+*.pt
+*.pth
+*.ckpt

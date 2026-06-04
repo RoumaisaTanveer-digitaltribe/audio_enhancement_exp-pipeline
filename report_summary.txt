@@ -1,0 +1,52 @@
+========================================================================
+AUDIO ENHANCEMENT EXPERIMENT — SIGNAL PROCESSING REPORT
+========================================================================
+
+Files processed     : 7
+Approach            : noisereduce + bandpass filter + pedalboard
+Python version      : 3.12 (no ML model required)
+
+PER-FILE RESULTS
+------------------------------------------------------------------------
+File                                Duration  Time(s)   CPU%  STOI Before  STOI After
+------------------------------------------------------------------------
+10minute.wav                            7.4m     6.57   52.4       1.0000      0.8784
+15min.wav                              15.4m    17.07   50.7       1.0000      0.8520
+30minu.wav                             30.1m    73.32   99.7       1.0000      0.8562
+5 minute interview.wav                  5.0m     6.63   50.2       1.0000      0.8592
+60min.wav                              61.1m    80.69   46.2       1.0000      0.8239
+bigtips_factoryr1_16.wav                0.0m     0.28   53.1       1.0000      0.8536
+sample_01_1min.wav                      0.1m     0.14   45.1       0.3787      0.3725
+------------------------------------------------------------------------
+AVERAGE                                         26.39   56.8       0.9112      0.7851
+
+AGGREGATE METRICS
+------------------------------------------------------------------------
+  Avg processing time : 26.39 seconds
+  Avg CPU usage       : 56.8%
+  Avg STOI before     : 0.9112
+  Avg STOI after      : 0.7851
+  Avg STOI gain       : -0.1261
+
+PIPELINE DETAILS
+------------------------------------------------------------------------
+  Step 1 — noisereduce  : Spectral gating to suppress background noise
+  Step 2 — bandpass     : Butterworth filter keeping 300-3400 Hz (voice range)
+  Step 3 — NoiseGate    : Silences low-level noise floor (threshold -35 dB)
+  Step 4 — Compressor   : Evens out volume dynamics (ratio 3:1)
+
+STRENGTHS
+------------------------------------------------------------------------
+  + No ML model — lightweight, fast, no GPU or Rust required
+  + Works on Python 3.12, no extra toolchain needed
+  + Consistent processing speed regardless of audio content
+  + Low memory footprint even on 60-minute files
+
+LIMITATIONS
+------------------------------------------------------------------------
+  - Cannot reconstruct degraded speech (unlike neural models)
+  - Less effective on highly variable or non-stationary noise
+  - Does not improve speech clarity beyond noise removal
+  - Quality ceiling lower than DeepFilterNet3
+
+========================================================================
