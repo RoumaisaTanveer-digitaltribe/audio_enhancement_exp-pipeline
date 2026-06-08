@@ -34,6 +34,10 @@ Signal Processing was consistently **5–10x faster** on CPU.
 
 > DeepFilterNet3 benefits significantly from GPU. All results above are CPU-only.
 
+#### Proposed Pipeline
+<img width="1024" height="1536" alt="audio_enhance_transcribe_pipeline" src="https://github.com/user-attachments/assets/cff672e7-9b84-41ea-8712-4506eaf12c95" />
+
+
 ### CPU Usage
 Signal Processing used less CPU on most files (~46–55%). DeepFilterNet3 spiked to 87–94% on short 16 kHz files. Exception: 30-min file where Signal Processing hit 99.7% (noisereduce profiling phase).
 
