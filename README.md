@@ -151,4 +151,3 @@ Place matching clean WAV files in `input/clean/` (same filenames as noisy inputs
 
 ---
 
-*Report by Roumaisa Tanveer — 5 June 2025*
